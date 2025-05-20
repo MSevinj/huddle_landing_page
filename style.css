@@ -10,11 +10,19 @@ body {
     flex-direction: column;
     margin: 0 50px;
 }
+
+
 header{
     display: flex;
     justify-content: space-between;
     text-align: center;
 }
+
+header img{
+    width: 10%;
+    height: 10%;
+}
+
 
 .header-button {
     border: solid hsl(321, 100%, 78%);
@@ -22,8 +30,8 @@ header{
     border-radius: 10px;
     padding: 10px 20px;
     background-color: white;
-
 }
+
 
 .main-header {
     font-family: "Inter", sans-serif;
@@ -36,11 +44,9 @@ header{
 
 .main-header-text {
     width: 400px;
-    /* overflow-wrap: break-word; */
     text-align: center;
     margin: 0 auto;
-    font-weight: 400px;
-
+    font-weight: 400;
 }
 
 .main-header-button{
@@ -52,6 +58,91 @@ header{
     border: none;
     padding: 15px;
 }
+
+.main-pic1 img {
+    display: block;
+    margin: 70px auto 0 auto;
+    width: 60%;
+    max-width: 1440px;
+}
+
+.stats-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px; 
+}
+
+.community-stat, .message-stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.community-stat img, .message-stat img{
+    margin-right: 100px;
+    width: 20%;
+}
+
+.stat-number {
+    font-weight: bold;
+    font-size: 4rem;
+}
+
+.stat-label {
+    color: gray;
+    font-size: 1rem;
+}
+
+
+
+.main-para {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1140px;
+  height: 500px; /* or more, depending on your image */
+  margin-top: 10%;
+  background-image: 
+    url("images/bg-section-top-desktop-1.svg");
+  background-repeat: no-repeat, no-repeat;
+  /* background-position: top left, top right;
+  background-size: 150px auto, 150px auto; */
+  position: relative;
+}
+
+
+.background-img{
+    position: absolute;
+    background-color: blue;
+    height: 300px;
+    width: 1140px ;
+    z-index: -1;
+
+}
+.main-para .text-content{
+    width: 50%;
+    padding: 60px;
+
+}
+
+.main-para h2{
+    font-size: 40px;
+    font-weight: 700;
+}
+
+
+.main-para img{
+    width: 30%;
+    max-width: 1440;
+}
+
+
+
+
 
 .attribution{
     font-size: 11px; text-align: center;
